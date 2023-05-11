@@ -42,16 +42,12 @@ def create_index():
             "properties": {
                 "title": {"type": "text"},
                 "text": {"type": "text"},
-                "content": {"type": "text"},
                 "embeddings": {
                     "type": "dense_vector",
                     "dims": 384,  # Update this to the correct dimension of your embeddings
                     "index": False
                 },
-                "content_vector": {
-                    "type": "dense_vector",
-                    "dims": 384
-                }
+                
             }
         },
         "settings": {
